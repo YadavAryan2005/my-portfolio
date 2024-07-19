@@ -3,8 +3,8 @@ import Image from "next/image";
 import Message from "../skills/Message.svg";
 function profile() {
   return (
-    <div className='bg-[#fcda69]  w-full h-full rounded-xl p-2 pt-8 md:pt-2 pb-0 md:h-[98vh] min-h-[780px] flex justify-center '>
-      <div className='max-w-[2000px] xl:px-[150px] md:px-[30px] lg:px-[90px] sm:p-[20px] justify-center items-center md:flex'>
+    <div className='bg-[#fcda69] flex flex-col  w-full h-full rounded-xl p-2 pt-8 md:pt-2 pb-0 md:h-[98vh] min-h-[820px] justify-center '>
+      <div className='max-w-[2000px] xl:px-[150px] md:px-[30px] lg:px-[90px] sm:px-[20px] justify-center items-center md:flex'>
         <div className='md:w-1/2 w-full'>
           <h1 data-aos='flip-up' className='text-[#4C40F7] text-xl'>
             __मेरा परिचय
@@ -49,7 +49,7 @@ function profile() {
             </a>
           </div>
         </div>
-        <Image src={Aryan} alt='Aryan' className='md:w-1/2 w-full b-0 fit' />
+        <Image src={Aryan} alt='Aryan' className='md:w-1/2 w-full b-0' />
       </div>
     </div>
   );
