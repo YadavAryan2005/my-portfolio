@@ -5,7 +5,7 @@ function Services() {
     <div className='w-full h-full flex flex-col  rounded-xl p-2 pt-8 md:pt-2 pb-0 md:h-[98vh] min-h-[820px] justify-center '>
       <div className='max-w-[2000px] xl:px-[150px] md:px-[30px] lg:px-[90px] sm:px-[20px] justify-center items-center md:flex'>
         <div className='w-full md:w-1/2'>
-          <h1 data-aos='flip-up' className='text-[#4C40F7] text-xl'>
+          <h1 data-aos='flip-up' className='text-[#4C40F7] text-xl md:text-2xl'>
             __मेरी सेवाएं
           </h1>
           <h2

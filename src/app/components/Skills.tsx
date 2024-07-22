@@ -20,7 +20,7 @@ export default function Skill() {
       <div className='max-w-[2000px] xl:px-[150px] md:px-[30px] lg:px-[90px] sm:px-[20px] '>
         <div className='w-full flex md:justify-center'>
           <div data-aos='flip-down' className='flex flex-col'>
-            <span className='text-blue-600 text-xl'>__कौशल</span>
+            <span className='text-blue-600 text-xl md:text-2xl'>__कौशल</span>
             <span className='font-serif text-4xl font-bold md:text-5xl'>
               Skills
             </span>
