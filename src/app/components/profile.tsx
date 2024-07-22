@@ -28,7 +28,7 @@ function profile() {
             integrating backend functionalities and managing complex queries
             effectively
           </div>
-          <div className='flex flex-row gap-8 sm:gap-12'>
+          <div className='flex flex-row gap-4 sm:gap-12'>
             <a href='#Contact-form'>
               <button
                 data-aos='flip-down'
