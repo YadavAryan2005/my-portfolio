@@ -21,7 +21,7 @@
     text-wrap: balance;
   }
 }
-.Detail {
+/* .Detail {
   display: none;
   transition: all 1s ease-in-out;
 }
@@ -38,8 +38,8 @@
     transition: all 1s ease-in-out;
   }
 }
-.ban:hover {
+.group:hover {
   .Detail {
     display: none;
   }
-}
+} */

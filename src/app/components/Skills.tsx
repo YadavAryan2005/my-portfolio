@@ -16,7 +16,7 @@ import github from "../skills/github_octocat-4c000ece.png";
 import Php from "../skills/php123-removebg-preview.png";
 export default function Skill() {
   return (
-    <div className='bg-[#fcda69] w-full h-full flex flex-col  rounded-xl p-2 pt-8 md:pt-2 pb-0 md:h-[98vh] min-h-[820px] justify-center '>
+    <div className='bg-[#fcda69] w-full h-full flex flex-col  rounded-xl p-2 pt-8 md:pt-2 pb-0 md:min-h-[98vh] min-h-[820px] justify-center '>
       <div className='max-w-[2000px] xl:px-[150px] md:px-[30px] lg:px-[90px] sm:px-[20px] '>
         <div className='w-full flex md:justify-center'>
           <div data-aos='flip-down' className='flex flex-col'>

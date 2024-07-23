@@ -9,7 +9,10 @@ import Download from "../skills/Download.svg";
 import Message from "../skills/Message.svg";
 function Contact() {
   return (
-    <div className='bg-[#fcda69] w-full h-full flex flex-col  rounded-xl p-2 pt-8 md:pt-2 pb-0 md:h-[98vh] min-h-[820px] justify-center '>
+    <div
+      id='Contact-form'
+      className='bg-[#fcda69] w-full h-full flex flex-col  rounded-xl p-2 pt-8 md:pt-2 pb-0 md:min-h-[98vh] min-h-[820px] justify-center '
+    >
       <div className='max-w-[2000px] xl:px-[150px] md:px-[30px] lg:px-[90px] sm:px-[20px] justify-center items-center md:flex gap-5'>
         <div className='w-full md:w-1/2 pb-5'>
           <h1
