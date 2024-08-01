@@ -9,7 +9,7 @@ function Project() {
   return (
     <div
       id='Projects'
-      className='w-full h-full flex flex-col  rounded-xl p-2 pt-8 md:pt-2 pb-0 md:min-h-[98vh] min-h-[820px] justify-center '
+      className='w-full  flex flex-col  rounded-xl p-2 pt-8 md:pt-2 pb-0 md:min-h-[98vh] min-h-[820px] justify-center '
     >
       <div className='max-w-[2000px] xl:px-[150px] md:px-[30px] lg:px-[90px] sm:px-[20px] justify-center items-center md:flex'>
         <div className='w-full md:w-1/2'>
@@ -38,7 +38,7 @@ function Project() {
             <div
               onMouseEnter={() => setShow(true)}
               onMouseLeave={() => setShow(false)}
-              className='rounded-md transition duration-700 ease-in-out overflow-clip relative  flex-col flex justify-center items-center text-4xl text-[#4C40F7] '
+              className='rounded-md  overflow-clip relative  flex-col flex justify-center items-center text-4xl text-[#4C40F7] '
             >
               <Image
                 src={project1}

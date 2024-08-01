@@ -11,7 +11,7 @@ function Contact() {
   return (
     <div
       id='Contact-form'
-      className='bg-[#fcda69] w-full h-full flex flex-col  rounded-xl p-2 pt-8 md:pt-2 pb-0 md:min-h-[98vh] min-h-[820px] justify-center '
+      className='bg-purple-500  w-full  flex flex-col  rounded-xl p-2 pt-8 md:pt-2 pb-0 md:min-h-[98vh] min-h-[820px] justify-center '
     >
       <div className='max-w-[2000px] xl:px-[150px] md:px-[30px] lg:px-[90px] sm:px-[20px] justify-center items-center md:flex gap-5'>
         <div className='w-full md:w-1/2 pb-5'>
@@ -23,7 +23,7 @@ function Contact() {
           </h1>
           <h2
             data-aos='flip-down'
-            className='font-serif text-4xl font-semibold w-full  md:text-6xl lg:text-7xl py-3 md:pt-6'
+            className='font-serif text-4xl font-semibold w-full  md:text-5xl py-3 md:pt-6'
           >
             Let’s make something amazing together Start By{" "}
             <span className='text-slate-500'>Saying Hi</span>
@@ -107,7 +107,7 @@ function Contact() {
             required
           />
           <input
-            className='p-3 rounded-xl border hover:border hover:border-[#4C40F7]'
+            className='p-3 rounded-xl border hover:border  hover:border-[#4C40F7]'
             type='text'
             name='email'
             id=''
@@ -115,7 +115,7 @@ function Contact() {
             required
           />
           <textarea
-            className='p-3 rounded-xl border hover:border hover:border-[#4C40F7]'
+            className='p-3 rounded-xl border hover:border hover:border-[#4C40F7] '
             name='message'
             id=''
             cols={30}
