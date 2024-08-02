@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { useState } from "react";
 // import "../globals.css";
-import project1 from "../project/movie.png";
+import Stock_Smart from "../project/Stock_Smart.png";
 import services1 from "../skills/services1.png";
 function Project() {
   const [show, setShow] = useState(false);
@@ -41,9 +41,9 @@ function Project() {
               className='rounded-md  overflow-clip relative  flex-col flex justify-center items-center text-4xl text-[#4C40F7] '
             >
               <Image
-                src={project1}
+                src={Stock_Smart}
                 alt='project1'
-                className='h-full w-full object-cover min-w-[660px] lg:min-w-0'
+                className='h-full w-full object-cover min-w-[400px] lg:min-w-0'
               />
               <button
                 className='absolute z-50 right-0 mr-2 '
@@ -68,7 +68,7 @@ function Project() {
                   Smart Stock
                   <br />
                   <p className='text-sm sm:text-xl md:text-2xl'>
-                    React Js, Node Js,Mongo Db, Express
+                    Next Js,Tailwind CSS, Node Js,Mongo Db
                   </p>
                   <button className='bg-[#4C40F7] text-white rounded-md p-2 text-sm sm:text-xl md:px-4'>
                     Live Preview
