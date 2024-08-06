@@ -1,11 +1,27 @@
 "use client";
 import Image from "next/image";
+import Link from "next/link";
 import { useState } from "react";
-// import "../globals.css";
-import Stock_Smart from "../project/Stock_Smart.png";
 import services1 from "../skills/services1.png";
+const project = [
+  {
+    id: 1,
+    img: "/Stock_Smart.png",
+    name: "Stock Smart",
+    tech: "Next Js,Tailwind CSS, Node Js,Mongo Db",
+    link: "https://stock-smart-next-js.vercel.app/",
+  },
+  {
+    id: 2,
+    img: "/headphone.png",
+    name: "Headphone",
+    tech: "React Js,Next Js,Tailwind CSS",
+    link: "https://headphone-8uyx.vercel.app/",
+  },
+];
 function Project() {
   const [show, setShow] = useState(false);
+  const [count, setCount] = useState(1);
   return (
     <div
       id='Projects'
@@ -35,46 +51,71 @@ function Project() {
               I am a full-stack developer with a passion for building beautiful
               and user-friendly web applications.
             </h1>
-            <div
-              onMouseEnter={() => setShow(true)}
-              onMouseLeave={() => setShow(false)}
-              className='rounded-md  overflow-clip relative  flex-col flex justify-center items-center text-4xl text-[#4C40F7] '
-            >
-              <Image
-                src={Stock_Smart}
-                alt='project1'
-                className='h-full w-full object-cover min-w-[400px] lg:min-w-0'
-              />
-              <button
-                className='absolute z-50 right-0 mr-2 '
-                onMouseEnter={() => setShow(false)}
-                onMouseLeave={() => setShow(true)}
-              >
-                &#10095;
-              </button>
-              <button
-                className='absolute z-50 left-0 ml-2 '
-                onMouseEnter={() => setShow(false)}
-                onMouseLeave={() => setShow(true)}
-              >
-                &#10094;
-              </button>
-              <div
-                className={`backdrop-blur-sm transition duration-700 ease-in-out  bg-white/30 w-full drop-shadow-sm  h-full absolute flex justify-center items-center  z-10 ${
-                  show ? "block" : "hidden"
-                } text-lg sm:text-2xl text-black text-center font-serif font-semibold`}
-              >
-                <div className='sm:p-10'>
-                  Smart Stock
-                  <br />
-                  <p className='text-sm sm:text-xl md:text-2xl'>
-                    Next Js,Tailwind CSS, Node Js,Mongo Db
-                  </p>
-                  <button className='bg-[#4C40F7] text-white rounded-md p-2 text-sm sm:text-xl md:px-4'>
-                    Live Preview
-                  </button>
-                </div>
-              </div>
+            <div className='relative'>
+              {project.map((data) =>
+                data.id === count ? (
+                  <div
+                    key={data.id}
+                    onMouseEnter={() => setShow(true)}
+                    onMouseLeave={() => setShow(false)}
+                    className='rounded-md overflow-hidden relative flex-col flex justify-center items-center text-4xl text-[#4C40F7] transition-all duration-500 ease-in-out'
+                  >
+                    <Image
+                      src={data.img}
+                      width={400}
+                      height={400}
+                      alt='project1'
+                      className='h-full w-full object-cover min-w-[400px] lg:min-w-0 transition-opacity duration-500 ease-in-out'
+                    />
+                    <button
+                      className='absolute z-50 right-0 mr-2'
+                      onMouseEnter={() => setShow(false)}
+                      onMouseLeave={() => setShow(true)}
+                      onClick={() => {
+                        if (count === 1) {
+                          setCount(2);
+                        } else {
+                          setCount(1);
+                        }
+                      }}
+                    >
+                      &#10095;
+                    </button>
+                    <button
+                      className='absolute z-50 left-0 ml-2'
+                      onMouseEnter={() => setShow(false)}
+                      onMouseLeave={() => setShow(true)}
+                      onClick={() => {
+                        if (count === 2) {
+                          setCount(1);
+                        } else {
+                          setCount(2);
+                        }
+                      }}
+                    >
+                      &#10094;
+                    </button>
+                    <div
+                      className={`backdrop-blur-[2px] transition-opacity duration-300 ease-in-out bg-white/30 w-full drop-shadow-sm h-full absolute flex justify-center items-center z-10 ${
+                        show ? "opacity-100" : "opacity-0"
+                      } text-lg sm:text-2xl text-black text-center font-serif font-semibold`}
+                    >
+                      <div className='p-10'>
+                        <span className='text-[#4C40F7]'>{data.name}</span>
+                        <br />
+                        <p className='text-md sm:text-xl md:text-2xl'>
+                          {data.tech}
+                        </p>
+                        <button className='bg-[#4C40F7] hover:bg-[#4C40F7]/90 text-white rounded-md p-2 text-sm sm:text-xl md:px-4'>
+                          <Link href={data.link}>Live Preview</Link>
+                        </button>
+                      </div>
+                    </div>
+                  </div>
+                ) : (
+                  " "
+                )
+              )}
             </div>
           </div>
         </div>

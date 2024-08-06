@@ -1,3 +1,4 @@
+"use client";
 import {
   GithubOutlined,
   LinkedinOutlined,
@@ -5,9 +6,42 @@ import {
   PhoneOutlined,
 } from "@ant-design/icons";
 import Image from "next/image";
+import { useState } from "react";
 import Download from "../skills/Download.svg";
 import Message from "../skills/Message.svg";
+
 function Contact() {
+  const [showError, setShowError] = useState(false);
+  const [errorMessage, setErrorMessage] = useState("");
+  const [formData, setFormData] = useState({
+    name: "",
+    email: "",
+    message: "",
+  });
+
+  const handleInputChange = (e: any) => {
+    const { name, value } = e.target;
+    setFormData({ ...formData, [name]: value });
+  };
+
+  const handleSubmit = (e: any) => {
+    e.preventDefault();
+    const { name, email, message } = formData;
+    const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+    if (!name || !email || !message) {
+      setErrorMessage("Please fill out all fields");
+      setShowError(true);
+      setTimeout(() => setShowError(false), 2000);
+    } else if (!emailRegex.test(email)) {
+      setErrorMessage("Please enter a valid email address");
+      setShowError(true);
+      setTimeout(() => setShowError(false), 2000);
+    } else {
+      e.target.submit(); // Submit the form
+    }
+  };
+
   return (
     <div
       id='Contact-form'
@@ -34,7 +68,7 @@ function Contact() {
             to connect with others and share my passion for Web Development.
           </p>
           <p data-aos='flip-down' className='text-[#000000ab] pt-2'>
-            Feel free to contact me for business services,web development and
+            Feel free to contact me for business services, web development, and
             other professional inquiries!
           </p>
           <a
@@ -97,31 +131,37 @@ function Contact() {
           action='https://formsubmit.co/2bdeb5e61a50b97bb1b683b45cdb6cb1'
           method='POST'
           className='flex flex-col gap-5 w-full md:w-1/2'
+          onSubmit={handleSubmit}
         >
+          {showError && (
+            <div className='bg-red-500 text-white p-2 rounded-xl text-center'>
+              {errorMessage}
+            </div>
+          )}
           <input
-            className='p-3 rounded-xl border hover:border hover:border-[#4C40F7]'
+            className='p-3 rounded-xl border focus:border-purple-800 hover:border-purple-600'
             type='text'
             name='name'
-            id=''
             placeholder='Name'
-            required
+            value={formData.name}
+            onChange={handleInputChange}
           />
           <input
-            className='p-3 rounded-xl border hover:border  hover:border-[#4C40F7]'
+            className='p-3 rounded-xl border focus:border-purple-800 hover:border-purple-600'
             type='text'
             name='email'
-            id=''
             placeholder='Email'
-            required
+            value={formData.email}
+            onChange={handleInputChange}
           />
           <textarea
-            className='p-3 rounded-xl border hover:border hover:border-[#4C40F7] '
+            className='p-3 rounded-xl border focus:border-purple-800 hover:border-purple-600'
             name='message'
-            id=''
             cols={30}
             rows={10}
             placeholder='Message'
-            required
+            value={formData.message}
+            onChange={handleInputChange}
           ></textarea>
           <button
             className='mt-4 p-4 my-3 bg-[#4C40F7] rounded-2xl text-white w-28 hover:mt-2 hover:mb-5 flex'
