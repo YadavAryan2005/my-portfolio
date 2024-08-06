@@ -8,7 +8,7 @@ const project = [
     id: 1,
     img: "/Stock_Smart.png",
     name: "Stock Smart",
-    tech: "Next Js,Tailwind CSS, Node Js,Mongo Db",
+    tech: "Next Js,Typescript,Tailwind CSS, Node Js,Mongo Db",
     link: "https://stock-smart-next-js.vercel.app/",
   },
   {
