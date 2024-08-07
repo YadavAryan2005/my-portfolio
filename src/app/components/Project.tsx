@@ -34,7 +34,7 @@ function Project() {
           </h1>
           <h2
             data-aos='flip-down'
-            className='font-serif text-4xl font-bold w-full flex  md:text-6xl lg:text-7xl py-3 md:pt-6'
+            className='kanit text-4xl font-bold w-full flex  md:text-6xl lg:text-7xl py-3 md:pt-6'
           >
             My Projects
           </h2>
@@ -98,7 +98,7 @@ function Project() {
                     <div
                       className={`backdrop-blur-[2px] transition-opacity duration-300 ease-in-out bg-white/30 w-full drop-shadow-sm h-full absolute flex justify-center items-center z-10 ${
                         show ? "opacity-100" : "opacity-0"
-                      } text-lg sm:text-2xl text-black text-center font-serif font-semibold`}
+                      } text-lg sm:text-2xl text-black text-center kanit font-semibold`}
                     >
                       <div className='p-10'>
                         <span className='text-[#4C40F7]'>{data.name}</span>

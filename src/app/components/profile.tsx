@@ -17,28 +17,32 @@ function Profile() {
             </h1>
             <h2
               data-aos='flip-down'
-              className='font-serif text-4xl font-bold w-full flex md:text-6xl lg:text-7xl py-3 md:pt-6'
+              className='kanit text-4xl font-bold w-full flex md:text-6xl lg:text-7xl py-3 md:pt-6'
             >
               Hey There,
               <br /> I’m Aryan
             </h2>
             <div
               data-aos='flip-down'
-              className='font-serif md:text-lg xl:text-xl text-slate-700'
+              className='kanit md:text-lg xl:text-xl text-slate-700'
             >
-              As a Full Stack Developer, I excel in creating consistent client
-              experiences with responsive designs across various devices. My
-              expertise in front-end development includes React JS, Ant Design,
-              and Tailwind CSS for dynamic web applications. On the backend,
-              I&apos;m proficient in Node.js, Express.js, MongoDB, and MySQL,
-              integrating backend functionalities and managing complex queries
-              effectively.
+              I am a{" "}
+              <span className='font-mono text-black'>Full Stack Developer</span>{" "}
+              with expertise in creating seamless client experiences through
+              responsive designs. I specialize in front-end technologies like{" "}
+              <span className='text-black'>
+                React JS, Next JS, and Tailwind CSS ,
+              </span>
+              and I am proficient in backend development using{" "}
+              <span className='text-black'>
+                Node.js, Express.js, MongoDB, and MySQL.
+              </span>
             </div>
             <div className='flex flex-row gap-4 sm:gap-12'>
               <a href='#Contact-form'>
                 <button
                   data-aos='flip-down'
-                  className='max-w-36 mt-4 p-4 my-3 bg-[#4C40F7] hover:bg-[#4c40f7e3] rounded-2xl text-white hover:mt-2 hover:mb-5 flex relative'
+                  className='kanit max-w-36 mt-4 p-4 my-3 bg-[#4C40F7] hover:bg-[#4c40f7e3] rounded-2xl text-white hover:mt-2 hover:mb-5 flex relative'
                 >
                   Say_Hello
                   <Image className='h-6' src={Message} alt='' />

@@ -57,7 +57,7 @@ function Contact() {
           </h1>
           <h2
             data-aos='flip-down'
-            className='font-serif text-4xl font-semibold w-full  md:text-5xl py-3 md:pt-6'
+            className='kanit text-4xl font-semibold w-full  md:text-5xl py-3 md:pt-6'
           >
             Let’s make something amazing together Start By{" "}
             <span className='text-slate-500'>Saying Hi</span>

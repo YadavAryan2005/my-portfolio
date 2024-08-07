@@ -21,10 +21,8 @@ export default function Skill() {
         <div className='w-full flex md:justify-center'>
           <div data-aos='flip-down' className='flex flex-col'>
             <span className='text-blue-600 text-xl md:text-2xl'>__कौशल</span>
-            <span className='font-serif text-4xl font-bold md:text-5xl'>
-              Skills
-            </span>
-            <span className='text-md font-serif text-slate-600'>
+            <span className='kanit text-4xl font-bold md:text-5xl'>Skills</span>
+            <span className='text-md kanit text-slate-600'>
               Languages,Technologies and tools that I have learned and applied
               to my projects
             </span>
