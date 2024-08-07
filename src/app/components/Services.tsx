@@ -22,8 +22,8 @@ function Services() {
           />
         </div>
         <div className='w-full md:w-1/2'>
-          <hr data-aos='fade-up' className='Border border-slate-500' />
-          <div data-aos='fade-up' className='py-5'>
+          <hr data-aos='fade-left' className='Border border-slate-500' />
+          <div data-aos='fade-left' className='py-5'>
             <h1 className='font-serif text-4xl font-bold  md:text-5xl lg:text-6xl'>
               1.Full Stack Web <br />
               Development
@@ -36,8 +36,8 @@ function Services() {
             </h2>
           </div>
           <br />
-          <hr data-aos='fade-up' className='Border border-slate-500' />
-          <div data-aos='fade-up' className='py-5'>
+          <hr data-aos='fade-left' className='Border border-slate-500' />
+          <div data-aos='fade-left' className='py-5'>
             <h1 className='font-serif text-4xl  font-bold md:text-5xl lg:text-6xl'>
               2.Website UI <br />
               Development
@@ -50,8 +50,8 @@ function Services() {
             </h2>
           </div>
           <br />
-          <hr data-aos='fade-up' className='Border border-slate-500' />
-          <div data-aos='fade-up' className='py-5'>
+          <hr data-aos='fade-left' className='Border border-slate-500' />
+          <div data-aos='fade-left' className='py-5'>
             <h1 className='font-serif text-4xl lg:Text-5xl font-bold lg:text-6xl'>
               3.Website UI/UX <br />
               Design

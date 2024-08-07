@@ -45,7 +45,7 @@ function Project() {
             className='flex justify-center md:justify-start'
           />
         </div>
-        <div className='w-full md:w-1/2'>
+        <div className='w-full md:w-1/2 ' data-aos='zoom-in-up'>
           <div className='flex flex-col gap-5'>
             <h1>
               I am a full-stack developer with a passion for building beautiful

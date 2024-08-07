@@ -88,24 +88,19 @@ function Contact() {
             </button>
           </a>
           <div className='contacts flex justify-evenly flex-col gap-3  text-[#000000ab] '>
-            <a
-              data-aos='flip-up'
-              href='mailto: aryanyadav7822900241@gmail.com'
-              className='  '
-            >
+            <a href='mailto: aryanyadav7822900241@gmail.com' className='  '>
               <span>
                 <MailOutlined style={{ fontSize: "30px" }} />
                 &nbsp;&nbsp;aryanyadav7822900241@gmail.com
               </span>
             </a>
-            <a data-aos='flip-up' href='tel:+917822900241' className='  '>
+            <a href='tel:+917822900241' className='  '>
               <span>
                 <PhoneOutlined style={{ fontSize: "30px" }} />
                 &nbsp; +91 7822900241
               </span>
             </a>
             <a
-              data-aos='flip-up'
               href='https://www.linkedin.com/in/aryan-yadav-240140267/'
               className='  '
             >
@@ -114,11 +109,7 @@ function Contact() {
                 &nbsp; Yadav Aryan
               </span>
             </a>
-            <a
-              data-aos='flip-up'
-              href='https://github.com/YadavAryan2005'
-              className='  '
-            >
+            <a href='https://github.com/YadavAryan2005' className='  '>
               <span>
                 <GithubOutlined style={{ fontSize: "30px" }} />
                 &nbsp; YadavAryan2005
